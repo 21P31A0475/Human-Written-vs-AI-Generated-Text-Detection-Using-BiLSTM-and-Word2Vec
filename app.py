@@ -12,7 +12,7 @@ MODEL_PATH = "ai_generated_text_detector.keras" # .keras has huge file github do
 #                                                  google drive and file is downloading with the help of below code                         
 
 if not os.path.exists(MODEL_PATH):
-    file_id = 'https://drive.google.com/file/d/1zr5TiC16kYhpWAGgakUUzRL1W1ujeuuV/view?usp=sharing'
+    file_id = '1zr5TiC16kYhpWAGgakUUzRL1W1ujeuuV'
     download_url = f"https://drive.google.com/uc?id={file_id}"
 
     gdown.download(download_url,MODEL_PATH,quiet=False)
