@@ -1,0 +1,9 @@
+{
+    "MAX_LEN": 373,
+    "embedding_dim": 100,
+    "threshold": 0.5,
+    "class_labels": {
+        "0": "Human Written",
+        "1": "AI Generated"
+    }
+}

@@ -1,0 +1,6 @@
+tensorflow
+keras
+streamlit
+numpy
+pandas
+gensim
