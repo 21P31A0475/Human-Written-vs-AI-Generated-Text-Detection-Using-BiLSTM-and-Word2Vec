@@ -5,6 +5,18 @@ import pickle
 import json
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
+import os
+import gdown
+
+MODEL_PATH = "ai_generated_text_detector.keras" # .keras has huge file github doesn't support then connect to 
+#                                                  google drive and file is downloading with the help of below code                         
+
+if not os.path.exists(MODEL_PATH):
+    file_id = 'https://drive.google.com/file/d/1zr5TiC16kYhpWAGgakUUzRL1W1ujeuuV/view?usp=sharing'
+    download_url = f"https://drive.google.com/uc?id={file_id}"
+
+    gdown.download(download_url,MODEL_PATH,quiet=False)
+model = load_model(MODEL_PATH)
 
 st.set_page_config(
     page_title="Human written vs AI Generated Text Detector",
